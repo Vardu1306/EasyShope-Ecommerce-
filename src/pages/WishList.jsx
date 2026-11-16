@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { WishlistContext } from "../context/WishlistContext";
-import "./Wishlist.css";
+import "./WishList.css";
 
 const Wishlist = () => {
   const { wishlistItems, dispatch } = useContext(WishlistContext);
