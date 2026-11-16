@@ -1,0 +1,378 @@
+
+.admin-dashboard {
+  padding: 25px;
+  background: #f8f7fc;
+  min-height: 100vh;
+}
+
+/* Header */
+
+.admin-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.admin-dashboard-header h1 {
+  font-size: 28px;
+  color: #25213a;
+  margin-bottom: 6px;
+}
+
+.admin-dashboard-header p {
+  color: #888;
+  font-size: 14px;
+}
+
+.admin-dashboard-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.admin-dashboard-btn:hover {
+  background: #5b21b6;
+}
+
+/* Dashboard Cards */
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.dashboard-card-icon.sales {
+  background: #ede9fe;
+}
+
+.dashboard-card-icon.orders {
+  background: #dbeafe;
+}
+
+.dashboard-card-icon.products {
+  background: #dcfce7;
+}
+
+.dashboard-card-icon.customers {
+  background: #fce7f3;
+}
+
+.dashboard-card h3 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.dashboard-card h2 {
+  font-size: 22px;
+  color: #25213a;
+}
+
+/* Recent Orders */
+
+.recent-orders {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.recent-orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recent-orders-header h2 {
+  color: #25213a;
+  font-size: 21px;
+}
+
+.recent-orders-header button,
+.view-order-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.recent-orders-header button:hover,
+.view-order-btn:hover {
+  background: #5b21b6;
+}
+
+.orders-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.admin-orders-table th,
+.admin-orders-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.admin-orders-table th {
+  background: #f5f3ff;
+  color: #5b21b6;
+  white-space: nowrap;
+}
+
+.admin-orders-table td {
+  color: #444;
+}
+
+.admin-order-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #e0e7ff;
+  color: #3730a3;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-order-status.delivered {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.admin-order-status.cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.admin-order-status.shipped {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.admin-order-status.processing {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.view-order-btn {
+  padding: 7px 12px;
+}
+
+.no-orders {
+  text-align: center;
+  color: #888;
+  padding: 30px 10px;
+}
+
+/* Top Customers */
+
+.top-customers {
+  background: #ffffff;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.top-customers-header {
+  margin-bottom: 20px;
+}
+
+.top-customers-header h2 {
+  color: #25213a;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.top-customers-header p {
+  color: #888;
+  font-size: 14px;
+}
+
+.customers-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.customers-table th,
+.customers-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.customers-table th {
+  background: #f5f3ff;
+  color: #5b21b6;
+}
+
+.customer-rank {
+  display: inline-block;
+  background: #ede9fe;
+  color: #6d28d9;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.customer-spending {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.no-customers {
+  text-align: center;
+  color: #888;
+  padding: 25px;
+}
+
+.dashboard-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dashboard-notification-btn {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ddd6fe;
+  border-radius: 10px;
+  background: white;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-notification-btn:hover {
+  background: #ede9fe;
+  transform: translateY(-2px);
+}
+
+.dashboard-notification-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ef4444;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .dashboard-header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .top-customers {
+    padding: 15px;
+  }
+
+  .top-customers-header h2 {
+    font-size: 19px;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 15px;
+  }
+
+  .admin-dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .dashboard-card {
+    padding: 15px;
+  }
+
+  .dashboard-card h2 {
+    font-size: 19px;
+  }
+
+  .recent-orders {
+    padding: 15px;
+  }
+
+  .recent-orders-header h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}

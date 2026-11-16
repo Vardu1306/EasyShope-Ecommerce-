@@ -1,0 +1,336 @@
+
+/* ==============================
+   CHECKOUT MAIN CONTAINER
+============================== */
+
+.checkout-container {
+  max-width: 1250px;
+  margin: 40px auto;
+  padding: 25px;
+  color: #333;
+}
+
+.checkout-container > h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #4c1d95;
+  margin-bottom: 35px;
+  font-weight: 800;
+}
+
+/* ==============================
+   CHECKOUT FORM LAYOUT
+============================== */
+
+.checkout-form {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* SHIPPING DETAILS */
+
+.checkout-details {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee7ff;
+  box-shadow: 0 5px 20px rgba(76, 29, 149, 0.07);
+}
+
+.checkout-details h3,
+.checkout-summary h3 {
+  font-size: 21px;
+  color: #4c1d95;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+/* INPUT GROUPS */
+
+.checkout-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19px;
+}
+
+.checkout-input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.checkout-input-group input,
+.checkout-input-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd6fe;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  background: #ffffff;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.checkout-input-group input:focus,
+.checkout-input-group textarea:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.checkout-input-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ==============================
+   PAYMENT OPTIONS
+============================== */
+
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border: 1px solid #ddd6fe;
+  border-radius: 8px;
+  background: #faf9ff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-options label:hover {
+  border-color: #7c3aed;
+  background: #f5f0ff;
+}
+
+.payment-options input {
+  accent-color: #6d28d9;
+  cursor: pointer;
+}
+
+/* CARD PAYMENT */
+
+.card-payment-fields {
+  background: #faf9ff;
+  padding: 20px;
+  border: 1px solid #e9ddff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   ORDER SUMMARY
+============================== */
+
+.checkout-summary {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #eee7ff;
+  box-shadow: 0 5px 20px rgba(76, 29, 149, 0.08);
+  position: sticky;
+  top: 100px;
+}
+
+.checkout-summary h3 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee7ff;
+}
+
+.checkout-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.checkout-summary-item span:first-child {
+  flex: 1;
+}
+
+.checkout-summary-item span:last-child {
+  font-weight: 600;
+  white-space: nowrap;
+  color: #4c1d95;
+}
+
+/* ==============================
+   COUPON SECTION
+============================== */
+
+.coupon-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 25px 0;
+  padding: 15px 0;
+  border-top: 1px solid #eee7ff;
+  border-bottom: 1px solid #eee7ff;
+}
+
+.coupon-section input {
+  flex: 1;
+  min-width: 120px;
+  padding: 11px;
+  border: 1px solid #ddd6fe;
+  border-radius: 7px;
+  outline: none;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.coupon-section input:focus {
+  border-color: #7c3aed;
+}
+
+.coupon-section button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 7px;
+  background: #6d28d9;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coupon-section button:hover {
+  background: #4c1d95;
+}
+
+.coupon-section button:last-child:not(:first-of-type) {
+  background: #dc2626;
+}
+
+/* ==============================
+   TOTAL AMOUNT
+============================== */
+
+.checkout-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 17px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.checkout-grand-total {
+  padding-top: 18px;
+  border-top: 1px solid #ddd6fe;
+  color: #4c1d95;
+  font-size: 19px;
+}
+
+/* ==============================
+   PLACE ORDER BUTTON
+============================== */
+
+.place-order-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #7c3aed, #4c1d95);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  background: linear-gradient(135deg, #4c1d95, #3b0764);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 29, 149, 0.2);
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 900px) {
+  .checkout-form {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-summary {
+    position: static;
+  }
+
+  .checkout-container {
+    padding: 20px;
+  }
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 600px) {
+  .checkout-container {
+    margin: 20px auto;
+    padding: 12px;
+  }
+
+  .checkout-container > h2 {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+
+  .checkout-details,
+  .checkout-summary {
+    padding: 20px 15px;
+  }
+
+  .checkout-details h3,
+  .checkout-summary h3 {
+    font-size: 19px;
+  }
+
+  .payment-options {
+    flex-direction: column;
+  }
+
+  .payment-options label {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .coupon-section {
+    flex-direction: column;
+  }
+
+  .coupon-section input,
+  .coupon-section button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .checkout-grand-total {
+    font-size: 17px;
+  }
+
+  .place-order-btn {
+    padding: 13px;
+  }
+}

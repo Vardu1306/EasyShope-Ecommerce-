@@ -1,0 +1,153 @@
+
+.featured-section {
+  max-width: 1400px;
+  margin: auto;
+  padding: 70px 45px;
+}
+
+.featured-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featured-heading > p {
+  color: #7c3aed;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.featured-heading h2 {
+  color: #1e1b4b;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.featured-heading h2 span {
+  color: #7c3aed;
+}
+
+.featured-heading h4 {
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.featured-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.featured-card {
+  width: 260px;
+  background: #ffffff;
+  border: 1px solid #eee8ff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(124, 58, 237, 0.08);
+  transition: 0.3s;
+}
+
+.featured-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.16);
+}
+
+.featured-image {
+  height: 220px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.featured-content {
+  padding: 18px;
+}
+
+.featured-content h3 {
+  color: #1e1b4b;
+  font-size: 15px;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.product-rating {
+  color: #d97706;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.product-rating span {
+  color: #6b7280;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-bottom h4 {
+  color: #7c3aed;
+  font-size: 19px;
+}
+
+.product-bottom button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 9px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-bottom button:hover {
+  background: #5b21b6;
+}
+
+.product-message,
+.product-error {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+}
+
+.product-error {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 50px 20px;
+  }
+
+  .featured-heading h2 {
+    font-size: 29px;
+  }
+
+  .featured-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-card {
+    width: 100%;
+  }
+
+  .featured-heading h2 {
+    font-size: 27px;
+  }
+}

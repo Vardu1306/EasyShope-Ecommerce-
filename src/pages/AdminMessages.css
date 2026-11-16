@@ -1,0 +1,227 @@
+
+.admin-messages-page {
+  padding: 30px;
+  min-height: 100vh;
+  background: #f5f3ff;
+  box-sizing: border-box;
+}
+
+.admin-messages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.admin-messages-header h1 {
+  color: #2e1065;
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.admin-messages-header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+.admin-messages-count {
+  background: white;
+  padding: 18px 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(46, 16, 101, 0.08);
+}
+
+.admin-messages-count span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.admin-messages-count h2 {
+  color: #5b21b6;
+  margin: 8px 0 0;
+  font-size: 28px;
+}
+
+.admin-messages-search {
+  margin-bottom: 20px;
+}
+
+.admin-messages-search input {
+  width: 100%;
+  max-width: 450px;
+  padding: 13px 15px;
+  border: 1px solid #ddd6fe;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  background: white;
+}
+
+.admin-messages-search input:focus {
+  border-color: #7c3aed;
+}
+
+.admin-messages-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 15px rgba(46, 16, 101, 0.08);
+}
+
+.admin-messages-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.admin-messages-table th {
+  background: #2e1065;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.admin-messages-table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #eee;
+  color: #374151;
+  font-size: 14px;
+}
+
+.admin-messages-table tbody tr:hover {
+  background: #faf5ff;
+}
+
+.admin-message-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.message-view-btn,
+.message-delete-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.message-view-btn {
+  background: #6d28d9;
+}
+
+.message-view-btn:hover {
+  background: #5b21b6;
+}
+
+.message-delete-btn {
+  background: #dc2626;
+}
+
+.message-delete-btn:hover {
+  background: #b91c1c;
+}
+
+.admin-messages-empty {
+  text-align: center;
+  padding: 30px !important;
+  color: #6b7280 !important;
+}
+
+/* Message Details Modal */
+.admin-message-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.admin-message-modal-content {
+  width: 100%;
+  max-width: 550px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.admin-message-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.admin-message-modal-header h2 {
+  color: #2e1065;
+  margin: 0;
+}
+
+.message-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.admin-message-detail {
+  margin-bottom: 18px;
+}
+
+.admin-message-detail label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.admin-message-detail p {
+  margin: 0;
+  color: #1f2937;
+  background: #f5f3ff;
+  padding: 12px;
+  border-radius: 7px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.message-modal-close {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #5b21b6;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.message-modal-close:hover {
+  background: #4c1d95;
+}
+
+@media (max-width: 768px) {
+  .admin-messages-page {
+    padding: 20px 15px;
+  }
+
+  .admin-messages-header h1 {
+    font-size: 23px;
+  }
+
+  .admin-message-modal-content {
+    padding: 20px;
+  }
+}

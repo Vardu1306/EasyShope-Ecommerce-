@@ -1,0 +1,119 @@
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #f3e8ff, #ede9fe);
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px 35px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(70, 30, 120, 0.15);
+}
+
+.admin-login-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-login-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.admin-login-heading h1 {
+  color: #6d28d9;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.admin-login-heading h2 {
+  color: #222;
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.admin-login-heading p {
+  color: #777;
+  font-size: 14px;
+}
+
+.admin-login-form-group {
+  margin-bottom: 20px;
+}
+
+.admin-login-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-login-form-group input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.admin-login-form-group input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #6d28d9;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-login-btn:hover {
+  background: #5b21b6;
+  transform: translateY(-2px);
+}
+
+.admin-login-error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.admin-login-footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.admin-login-footer a {
+  color: #6d28d9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.admin-login-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .admin-login-card {
+    padding: 30px 22px;
+  }
+}

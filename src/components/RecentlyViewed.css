@@ -1,0 +1,36 @@
+
+.recently-viewed {
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.recently-viewed h2 {
+  font-size: 25px;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.recently-viewed-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recently-viewed-container > * {
+  flex: 1 1 220px;
+  max-width: 280px;
+}
+
+@media (max-width: 600px) {
+  .recently-viewed {
+    padding: 15px;
+  }
+
+  .recently-viewed h2 {
+    font-size: 21px;
+  }
+
+  .recently-viewed-container > * {
+    flex-basis: 150px;
+  }
+}

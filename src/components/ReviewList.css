@@ -1,0 +1,43 @@
+
+.review-list {
+  margin: 30px 0;
+}
+
+.review-list h2 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.no-reviews {
+  color: #777;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.review-card {
+  padding: 18px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.review-card .review-stars {
+  color: #f5a623;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.review-card .review-stars span {
+  color: #ccc;
+}
+
+.review-card p {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.review-card small {
+  color: #888;
+}
