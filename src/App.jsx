@@ -10,7 +10,7 @@ import AppRoutes from "./routes/AppRoutes";
 
 import ProductProvider from "./context/ProductContext";
 import AuthProvider from "./context/AuthContext";
-
+import ScrollToTop from "./components/ScrollToTop";
 const AppContent = () => {
   const location = useLocation();
 
@@ -28,6 +28,8 @@ const AppContent = () => {
 
   return (
     <>
+        <ScrollToTop />
+
       {/* Customer Navbar */}
       {showCustomerLayout && <Navbar />}
 
